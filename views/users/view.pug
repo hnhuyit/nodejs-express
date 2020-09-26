@@ -1,4 +1,9 @@
-h1 View User
-p  
-    b Name
-    span=user.name
+extends ../layouts/common
+
+block content
+    h1 View User
+    p  
+        b Name
+        span=user.id
+        span= user.name
+        a(class="" href="/users/del/" + user.id) X
